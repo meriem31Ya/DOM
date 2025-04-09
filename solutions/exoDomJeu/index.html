@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Le juste prix</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>🎯 Devine le prix !</h1>
+    <p>Un nombre entre 1 et 100 a été choisi au hasard. À toi de jouer !</p>
+
+    <form id="guess_form">
+      <input
+        name="guess"
+        type="number"
+        min="1"
+        max="100"
+        required
+        placeholder="Entre un nombre"
+      />
+      <button type="submit">Valider</button>
+    </form>
+
+    <p id="message"></p>
+    <p>Meilleur score : <span id="best-score">--</span> essais</p>
+
+    <script src="main.js"></script>
+  </body>
+</html>

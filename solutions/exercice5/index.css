@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  /* cursor: none; Pour masquer le curseur de la souris */
+}
+
+#follower {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: crimson;
+  position: fixed;
+  /* pointer-events: none; */
+  transform: translate(-50%, -50%);
+}

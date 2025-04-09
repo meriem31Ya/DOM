@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Galerie filtrable</title>
+    <style>
+      body {
+        font-family: sans-serif;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .filters {
+        margin-bottom: 20px;
+      }
+
+      .filters button {
+        padding: 10px 16px;
+        margin: 5px;
+        border: none;
+        background-color: #007bff;
+        color: white;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .filters button:hover {
+        background-color: #0056b3;
+      }
+
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+      }
+
+      .gallery-item {
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 8px;
+        display: none; /* cachée par défaut */
+      }
+
+      .visible {
+        display: block !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Galerie filtrable 🖼️</h1>
+
+    <div class="filters">
+      <button data-category="all">Tous</button>
+      <button data-category="nature">Nature</button>
+      <button data-category="ville">Ville</button>
+      <button data-category="animaux">Animaux</button>
+    </div>
+
+    <div class="gallery" id="gallery"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
