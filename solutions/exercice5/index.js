@@ -22,3 +22,11 @@ function animate() {
 }
 
 animate();
+
+//  version plus simple
+const followerr = document.querySelector("#follower");
+
+document.addEventListener("mousemove", (e) => {
+  followerr.style.left = `${e.clientX}px`;
+  followerr.style.top = `${e.clientY}px`;
+});
